@@ -1,0 +1,53 @@
+.navbar-height{
+	height: 90px ;
+	background-color: #edead9 ;
+	font-size: 20px;
+	color: #606060;
+}
+.logo{
+	width: 90px;
+	height: 80px; 
+	margin-top: -8px;	 
+	margin-left: 40px;	
+}
+
+.navigate{
+	margin: 20px 30px ;
+		background-color: #edead9 ;
+
+}
+.header{
+	height: 50px;
+	margin-bottom:-2px; 
+	padding: 0px;
+	background-color: #ccc6c2!important;
+}
+.header h3{
+	padding-top: 9px;
+	font-weight: bold;
+	color: #337ab7;
+}
+.btn-col {
+	color: #337ab7;
+	border-color: #337ab7;
+	border-radius: 20px !important; 
+}
+  .btn-col:hover{
+ 	color: #337ab7;
+	border-color: #337ab7;
+ }
+ .well-style{
+ 	margin: 15px
+ }
+ .list-group-style{
+ 	background-color: #cccccc;
+ 	color:#050505 ;
+ }
+ .icons a{
+ 	color: #337ab7 !important;
+ }
+.caption{
+	text-transform: uppercase;
+	text-align: center;
+	color: #337ab7;
+}

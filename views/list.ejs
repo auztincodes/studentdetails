@@ -1,0 +1,73 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Resource</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-height" role="navigation">
+		<div class="container-fluid ">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href=""><img class= "logo" src= "http://res.cloudinary.com/auztin/image/upload/v1509402479/University_of_Lagos_logo_svg_hggbxj.png"></a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navigate navbar-ex1-collapse">
+				
+				<ul class="nav navbar-nav navbar-right ">
+					<li><a href="/list">List Resource</a></li>
+					<li><a href="/form">Create Resource</a></li>
+
+					
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+
+<section>
+	<h2 class="caption">Students Data</h2>
+	<div class="row">
+		<% studentdata.forEach(function(item) {%>
+		<div class="col-md-4">
+		  <div class="well well-style">
+		   <ul class="list-group ">
+		   	<li class="list-group-item list-group-style">First Name: <%= item.firstname %> </li>
+		   	<li class="list-group-item list-group-style">Last Name: <%= item.lastname %> </li>
+		   	<li class="list-group-item list-group-style">Date of Birth: <%= item.dateofbirth %> </li>
+		   	<li class="list-group-item list-group-style">Email Address: <%= item.email %> </li>
+		   	<li class="list-group-item list-group-style">Department: <%= item.department %> </li>
+		   	<li class="list-group-item list-group-style">Year of Study: <%= item.yearofstudy %></li>
+		   </ul>
+		   <div class="pull-right icons">
+		   	<a href="/edit/<%= item._id %>"><span class="glyphicon glyphicon-pencil"></span>&nbsp Edit</a> &nbsp&nbsp &nbsp
+			<a href="/delete/<%= item._id %>"><span class="glyphicon glyphicon-trash"></span>&nbsp Delete</a>
+		</div>
+		  </div>
+		 </div>
+
+		 <% }) %>
+		
+
+
+	</div>
+
+
+
+ 	
+
+</section>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>
+</html>
